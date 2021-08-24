@@ -1,5 +1,8 @@
 package br.com.restaurant.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.stereotype.Component;
 
@@ -7,8 +10,11 @@ import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Component
 @Table(name = "product")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Component
 public class ProductEntity {
 
     /**
